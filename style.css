@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Gabarito", sans-serif;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: solid black 1px;
+    gap: 10px;
+}
+.navbar__s1__title{
+    color: #A237F2;
+}
+.navbar__s2{
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar__s2 input{
+    border: none;
+    width: 100%;
+    font-size: 16px;
+}
+.navbar__s2 input:focus{
+    outline: none;
+}
+.navbar__s3{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.navbar__s3 p:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.navbar__s3 i:hover{
+    cursor: pointer;
+}
+
+/* categories*/
+.categories{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid black 1px;
+}
+.categories p{
+    background-color: #B051F0;
+    color: white;
+    padding: 5px;
+    margin: 7px;
+    border-radius: 30px;
+}
+.categories p:hover{
+    cursor: pointer;
+    font-weight: bolder;
+}
+.sale-image img{
+    width: 100%;  /* to fit image in screen*/
+}
+.recommended{
+    margin-top: 5px;
+    padding: 5px;
+}
+.recommended__container{
+    margin-top: 10px; 
+    display: flex; 
+    flex-wrap: wrap; /* used so tat wen minimize window it looks good  */
+    justify-content: space-around;  
+}
+.coursecard{
+    width: 250px;
+      
+}
+.coursecard img{
+    width: 100%;  
+}
+
+/*topic section*/
+.topics{
+    padding: 5px;
+}
+.topics__title{
+    display: flex; 
+    flex-wrap: wrap;     
+}
+.topics__title p{
+    border: solid black 1px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    flex-grow: 1; 
+    flex-basis: 25%; /*when we minimize tab still it shows 3 in a line*/
+}
+.topics__title p:hover{
+    border: solid black 3px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+/* most popular*/
+.popular{
+    padding: 5px;
+    margin: 5px;
+}
+.popular__container{
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.popular__coursecard{
+    width: 240px;
+}
+.popular__coursecard img{
+    width: 100%;
+}
+
+/*footer*/
+.footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+.footer__one{
+    display: flex;
+    gap: 30px;
+}
+.footer__one p{
+    margin: 10px;
+}
+.footer__two{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__titles1 p:hover{
+    font-weight: bolder;
+    color: aqua;
+    cursor: pointer;
+}
+.footer__titles2 p:hover{
+    font-weight: bolder;
+    color: aqua;
+    cursor: pointer;
+}
