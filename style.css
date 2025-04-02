@@ -47,6 +47,9 @@ body{
 .mylearning{
     position: relative;
 }
+.menubar{
+    display: none;
+}
 .mylearning__popup{
     border: solid black 1px;
     background-color: white;
@@ -99,16 +102,18 @@ body{
 
 .sale-image img{
     width: 100%;  /* to fit image in screen*/
+    
+}
+.sale-image{
     position: relative;
 }
 .sale-image__offer{
     border: solid black 2px;
-    width: 400px;
-    height: 80px;
+    width: 35%;
     position: absolute;
-    top: 200px;
-    left: 100px;
-    padding: 10px;
+    top: 20%;
+    left: 5%;
+    padding: 1%;
     background-color: white;
     animation-name: zoom;
     animation-duration: 1s;
@@ -121,8 +126,8 @@ body{
         opacity: 0;
     }
     100%{
-        transform: scale(1);
         opacity: 1;
+        transform: scale(1);   
     }
 }
 
@@ -138,11 +143,12 @@ body{
     justify-content: space-around;  
 }
 .coursecard{
-    width: 250px;
-      
+    flex-grow: 1;
+    flex-basis: 20%; 
+    margin: 10px;
 }
 .coursecard img{
-    width: 100%;  
+    width: 90%;  
 }
 
 /*topic section*/
@@ -180,7 +186,10 @@ body{
     
 }
 .popular__coursecard{
-    width: 240px;
+    flex-grow: 1;
+    flex-basis: 20%; 
+    margin: 10px;
+
 }
 .popular__coursecard img{
     width: 100%;
@@ -214,3 +223,37 @@ body{
     color: aqua;
     cursor: pointer;
 }
+@media screen and (max-width:800px) {
+    .categories{
+        display: none;
+    }
+}
+@media screen and (max-width:800px) {
+    body{
+       font-size: 12px; 
+    }
+}
+@media screen and (max-width:800px) {
+    .menubar{
+        display: block;
+    }
+    .navbar__s3{
+        display: none;
+    }
+}
+@media screen and (max-width:600px) {
+    .coursecard{
+        flex-basis: 40%;
+    }
+}
+@media screen and (max-width:600px) {
+    .popular__coursecard{
+        flex-basis: 40%;
+    }
+}
+
+
+
+
+
+
